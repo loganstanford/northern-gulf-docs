@@ -81,14 +81,27 @@
                     </p>
                     <h3 class="text-2xl md:text-3xl font-bold mb-4 text-gray-900">Industry Certifications and
                         Memberships</h3>
-                    <ul class="list-image-cert list-disc ml-6">
-                        <li class="p-2">American Vessel Documentation Association</li>
-                        <li class="p-2">US Coast Guard Merchant Mariner License, OUPV / 6-pack 50 Ton</li>
-                        <li class="p-2">
-                            <div class="flex items-center">Florida Notary Certification 1</div>
+                    <ul class="list-image-cert list-disc pl-6">
+                        <li class="pl-2" style="position: relative; padding-top: 5px; padding-bottom: 5px;">
+                            <div class="flex items-center"
+                                style="position: absolute; top: 50%; transform: translateY(-50%);">
+                                Vessel Documentation Association
+                            </div>
                         </li>
-
+                        <li class="pl-2" style="position: relative; padding-top: 5px; padding-bottom: 5px;">
+                            <div class="flex items-center"
+                                style="position: absolute; top: 50%; transform: translateY(-50%);">
+                                US Coast Guard Merchant Mariner License, OUPV / 6-pack 50 Ton
+                            </div>
+                        </li>
+                        <li class="pl-2" style="position: relative; padding-top: 5px; padding-bottom: 5px;">
+                            <div class="flex items-center"
+                                style="position: absolute; top: 50%; transform: translateY(-50%);">
+                                Florida Notary Certification 1
+                            </div>
+                        </li>
                     </ul>
+
                 </div>
             </div>
         </div>
