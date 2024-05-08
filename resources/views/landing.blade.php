@@ -85,7 +85,7 @@
                         <li class="pl-2" style="position: relative; padding-top: 5px; padding-bottom: 5px;">
                             <div class="flex items-center"
                                 style="position: absolute; top: 50%; transform: translateY(-50%);">
-                                Vessel Documentation Association
+                                <a href="https://americanvessel.com/">American Vessel Documentation Association</a>
                             </div>
                         </li>
                         <li class="pl-2" style="position: relative; padding-top: 5px; padding-bottom: 5px;">
@@ -101,7 +101,6 @@
                             </div>
                         </li>
                     </ul>
-
                 </div>
             </div>
         </div>
@@ -118,17 +117,20 @@
                     <i
                         class="fas fa-folder-open fa-rotate-180 fa-flip-horizontal text-emerald-700 text-6xl mx-auto"></i>
                     <h3 class="text-xl font-semibold mb-2">Documentation Services U.S. Coast Guard</h3>
-                    <ul class="list-disc pl-6 mb-8">
-                        <li class="pl-2">Prepare and Submit Application for New and Existing USCG
-                            Documented Vessels</li>
-                        <li class="pl-2">Ownership Changes to Documentation</li>
-                        <li class="pl-2">Return to Documentation, and Renewals</li>
-                        <li class="pl-2">Abstract of Title, Lien Search Requests with the USCG</li>
-                        <li class="pl-2">Deletions from the USCG Documentation</li>
-                        <li class="pl-2">Prepare and Record Preferred Ship’s Mortgage</li>
-                        <li class="pl-2">File Satisfaction of Lien</li>
-                        <li class="pl-2">File Bills of Sale</li>
-                    </ul>
+                    <div class="p-4">
+                        <ul class="list-disc pl-6 mb-8">
+                            <li class="pl-2 mb-2">Prepare and Submit Application for New and Existing USCG Documented
+                                Vessels</li>
+                            <li class="pl-2 mb-2">Ownership Changes to Documentation</li>
+                            <li class="pl-2 mb-2">Return to Documentation, and Renewals</li>
+                            <li class="pl-2 mb-2">Abstract of Title, Lien Search Requests with the USCG</li>
+                            <li class="pl-2 mb-2">Deletions from the USCG Documentation</li>
+                            <li class="pl-2 mb-2">Prepare and Record Preferred Ship’s Mortgage</li>
+                            <li class="pl-2 mb-2">File Satisfaction of Lien</li>
+                            <li class="pl-2 mb-2">File Bills of Sale</li>
+                        </ul>
+                    </div>
+
                     <a href="#contact"
                         class="bg-emerald-600 hover:bg-emerald-700 text-white font-semibold py-2 px-4 rounded-full inline-block">Get
                         a Quote</a>
@@ -136,7 +138,19 @@
                 <div class="bg-white p-6 rounded-lg shadow-md">
                     <i class="fas fa-anchor text-emerald-700 text-6xl mx-auto"></i>
                     <h3 class="text-xl font-semibold mb-2">Documentation Services State Agencies</h3>
-                    <p class="text-lg mb-4">Specializing in: Florida, Texas and Rhode Island</p>
+                    <div class="p-4">
+                        <ul class="list-disc ml-4">
+                            <li class="mb-2">State Agencies</li>
+                            <li class="mb-2">Specializing in: Florida, Texas and Rhode Island</li>
+                            <li class="mb-2">Determine State Sales & Use Tax for Florida & Texas</li>
+                            <li class="mb-2">Title & Registration Services for Vessel & Outboard Motors, Tenders in
+                                Texas</li>
+                            <li class="mb-2">Title & Registrations Services for Vessel, Tender & Trailers in Florida
+                            </li>
+                            <li class="mb-2">Rhode Island Registration for USCG Documented Vessels</li>
+                        </ul>
+                    </div>
+
                     <a href="#contact"
                         class="bg-emerald-600 hover:bg-emerald-700 text-white font-semibold py-2 px-4 rounded-full inline-block">Get
                         a Quote</a>
@@ -144,7 +158,20 @@
                 <div class="bg-white p-6 rounded-lg shadow-md">
                     <i class="fas fa-ship text-emerald-700 text-6xl mx-auto"></i>
                     <h3 class="text-xl font-semibold mb-2">Vessel Closing Services</h3>
-                    <p class="text-lg mb-4">Vessel Ownership Research – Corporations, Limited Liability, and Trusts</p>
+                    <div class="p-4">
+                        <ul class="list-disc pl-6 mb-8">
+                            <li class="pl-2 mb-2">Prepare and Submit Application for New and Existing USCG Documented
+                                Vessels</li>
+                            <li class="pl-2 mb-2">Ownership Changes to Documentation</li>
+                            <li class="pl-2 mb-2">Return to Documentation, and Renewals</li>
+                            <li class="pl-2 mb-2">Abstract of Title, Lien Search Requests with the USCG</li>
+                            <li class="pl-2 mb-2">Deletions from the USCG Documentation</li>
+                            <li class="pl-2 mb-2">Prepare and Record Preferred Ship’s Mortgage</li>
+                            <li class="pl-2 mb-2">File Satisfaction of Lien</li>
+                            <li class="pl-2 mb-2">File Bills of Sale</li>
+                        </ul>
+                    </div>
+
                     <a href="#contact"
                         class="bg-emerald-600 hover:bg-emerald-700 text-white font-semibold py-2 px-4 rounded-full inline-block">Get
                         a Quote</a>
