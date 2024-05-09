@@ -27,28 +27,10 @@ class ContactController extends Controller
             // Add the client_id to the validated data
             $validatedData['client_id'] = $client->id;
         } else {
-            // Split the name into first and last name
-            $nameParts = explode(' ', $validatedData['name']);
-
-            // If the name has more than two parts, combine everything after the first part into the last name
-            if (count($nameParts) > 2) {
-                $firstName = $nameParts[0];
-                $lastName = array_slice($nameParts, 1);
-                $nameParts = [$nameParts[0], implode(' ', $lastName)];
-            }
-            elseif (count($nameParts) === 2) {
-                $firstName = $nameParts[0];
-                $lastName = $nameParts[1];
-            }
-            elseif (count($nameParts) === 1) {
-                $firstName = $nameParts[0];
-                $lastName = '';
-            }
             
             // Create a new client
             $client = Client::create([
-                'first_name' => $firstName ?? '',
-                'last_name' => $lastName ?? '',
+                'name' => $validatedData['name'],
                 'email' => $validatedData['email'],
             ]);
 
@@ -56,10 +38,15 @@ class ContactController extends Controller
             $validatedData['client_id'] = $client->id;
         }
 
+        $contactData = [
+            'client_id' => $validatedData['client_id'],
+            'message' => $validatedData['message'],
+        ];
+
         // Create a new ContactSubmission instance and save it to the database
-        $contactSubmission = ContactSubmission::create($validatedData);
+        $contactSubmission = ContactSubmission::create($contactData);
 
         // Optionally, you can return a response to the user
-        return response()->json(['message' => 'Form submitted successfully', 'submission_id' => $contactSubmission->id, 'client_id' => $client->id, 'client_name' => $client->first_name . ' ' . $client->last_name, 'client_email' => $client->email, 'validated_data' => $validatedData]);
+        return response()->json(['message' => 'Form submitted successfully', 'submission_id' => $contactSubmission->id, 'client_id' => $client->id, 'client_name' => $client->name, 'client_email' => $client->email, 'validated_data' => $validatedData]);
     }
 }
