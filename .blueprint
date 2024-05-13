@@ -1,0 +1,23 @@
+created:
+    - database/factories/ClientFactory.php
+    - database/factories/ContactSubmissionFactory.php
+    - database/factories/FollowUpFactory.php
+    - database/factories/TransactionFactory.php
+    - database/factories/VesselFactory.php
+    - database/migrations/2024_05_09_164634_create_clients_table.php
+    - database/migrations/2024_05_09_164635_create_contact_submissions_table.php
+    - database/migrations/2024_05_09_164636_create_follow_ups_table.php
+    - database/migrations/2024_05_09_164637_create_transactions_table.php
+    - database/migrations/2024_05_09_164638_create_vessels_table.php
+    - app/Models/Client.php
+    - app/Models/ContactSubmission.php
+    - app/Models/FollowUp.php
+    - app/Models/Transaction.php
+    - app/Models/Vessel.php
+models:
+    User: { name: string, email: string, email_verified_at: 'timestamp nullable', password: string, remember_token: 'string:100 nullable' }
+    Client: { name: string, email: 'string nullable', phone: 'string nullable', street: 'string nullable', city: 'string nullable', state: 'string nullable', zip: 'string nullable', client_type: 'string nullable', tax_id: 'string nullable', first_name: 'string nullable', middle_name: 'string nullable', last_name: 'string nullable', suffix: 'string nullable', ssn: 'string nullable', drivers_license: 'string nullable', date_of_birth: 'date nullable', relationships: { hasMany: 'ContactSubmission, FollowUp, Transaction, Vessel' } }
+    ContactSubmission: { client_id: unsignedInteger, message: text, relationships: { belongsTo: Client } }
+    FollowUp: { client_id: unsignedInteger, method: string, date: datetime, notes: text, action: 'string nullable', relationships: { belongsTo: Client } }
+    Transaction: { name: string, buyer_type: string, seller_type: string, initiated_date: datetime, target_close_date: 'datetime nullable', actual_close_date: 'datetime nullable', relationships: { hasMany: 'Client, Vessel' } }
+    Vessel: { name: string, type: string, length: float, motor_type: string, motor_count: 'unsignedInteger nullable', motor_horsepower: 'unsignedInteger nullable', year: unsignedInteger, client_id: unsignedInteger, relationships: { belongsTo: Client } }
